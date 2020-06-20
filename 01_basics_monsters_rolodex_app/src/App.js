@@ -4,30 +4,23 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = [
-      {
-        name: 'Dragon',
-        id: 'hf3s',
-      },
-      {
-        name: 'Goblin',
-        id: 'hd78c',
-      },
-      {
-        name: 'Grendel',
-        id: 'asd23dsa',
-      },
-      {
-        name: 'Kraken',
-        id: 'dsf342sdf',
-      },
-    ];
+    this.state = {
+      monsters: [],
+    };
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => response.json())
+      .then((users) => {
+        this.setState({ monsters: users });
+      });
   }
 
   render() {
     return (
       <div className="App">
-        {this.state.map((monster) => (
+        {this.state.monsters.map((monster) => (
           <h1 key={monster.id}>{monster.name}</h1>
         ))}
       </div>
