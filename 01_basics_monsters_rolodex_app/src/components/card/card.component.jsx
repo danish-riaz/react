@@ -9,5 +9,6 @@ export const Card = (props) => (
       alt="monster"
     />
     <h2>{props.monster.name}</h2>
+    <p>{props.monster.email}</p>
   </div>
 );
