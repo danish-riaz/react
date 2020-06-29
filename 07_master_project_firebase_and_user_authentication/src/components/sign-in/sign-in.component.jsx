@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import InputForm from '../form-input/form-input.component';
+import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+
 import { signInWithGoogle } from '../../firebase/firebase.utlis';
 
 import './sign-in.styles.scss';
 
-class SignIn extends Component {
+class SignIn extends React.Component {
   constructor(props) {
     super(props);
 
@@ -16,13 +17,15 @@ class SignIn extends Component {
     };
   }
 
-  handlerSubmit = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault();
+
     this.setState({ email: '', password: '' });
   };
 
   handleChange = (event) => {
     const { value, name } = event.target;
+
     this.setState({ [name]: value });
   };
 
@@ -30,34 +33,28 @@ class SignIn extends Component {
     return (
       <div className="sign-in">
         <h2>I already have an account</h2>
-        <span>Signin with your email and password</span>
+        <span>Sign in with your email and password</span>
 
-        <form onSubmit={this.handlerSubmit}>
-          <InputForm
+        <form onSubmit={this.handleSubmit}>
+          <FormInput
             name="email"
-            type="text"
-            label="Email"
-            value={this.state.email}
+            type="email"
             handleChange={this.handleChange}
+            value={this.state.email}
+            label="email"
             required
           />
-          <InputForm
+          <FormInput
             name="password"
             type="password"
-            label="Password"
             value={this.state.password}
             handleChange={this.handleChange}
+            label="password"
             required
           />
           <div className="buttons">
-            <CustomButton type="submit">Sign In</CustomButton>
-            <CustomButton
-              onClick={(e) => {
-                e.preventDefault();
-                signInWithGoogle();
-              }}
-              isGoogleBtn
-            >
+            <CustomButton type="submit"> Sign in </CustomButton>
+            <CustomButton onClick={signInWithGoogle} isGoogleBtn>
               Sign in with Google
             </CustomButton>
           </div>
