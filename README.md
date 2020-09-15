@@ -1,8 +1,7 @@
 # React
 
-Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL) <br />
-Udemy Link - https://www.udemy.com/course/complete-react-developer-zero-to-mastery/ <br />
-Zero To Mastery - https://academy.zerotomastery.io/p/complete-react-developer-redux-hooks-graphql-zero-to-mastery <br />
+This repo will be always upto date students can access class code from here.<br />
+Batch-1 (2020)
 
 ## NOTE
 
