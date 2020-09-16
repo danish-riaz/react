@@ -1,0 +1,96 @@
+.searchbox {
+  padding: 20px;
+  width: 300px;
+  border-right: none;
+  box-sizing: border-box;
+}
+.fl-right {
+  float: right;
+  box-sizing: border-box;
+}
+.searchboxicon {
+  padding: 20px;
+  width: 80px;
+  border-left: none;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .searchboxicon {
+    width: 20% !important;
+    padding: 10px;
+    width: 40px;
+    margin-top: 20px;
+  }
+  .searchbox {
+    width: 70% !important;
+    padding: 10px;
+    width: 150px;
+    margin-top: 20px;
+  }
+  .fl-right {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  .searchboxicon {
+    width: 20% !important;
+    padding: 10px;
+    width: 40px;
+    margin: 20px 0;
+  }
+  .searchbox {
+    width: 80% !important;
+    padding: 10px;
+    width: 150px;
+    margin: 20px 0;
+  }
+  .fl-right {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .searchboxicon {
+    width: 20% !important;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .searchbox {
+    width: 80% !important;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .fl-right {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 412px) {
+  .searchboxicon {
+    width: 20% !important;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .searchbox {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+  }
+  .fl-right {
+    width: 100%;
+    float: left;
+  }
+}

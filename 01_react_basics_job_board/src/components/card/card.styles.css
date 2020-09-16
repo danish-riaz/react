@@ -1,0 +1,28 @@
+.indCard {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.indCard:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 8px 16px 4px rgba(0, 0, 0, 0.4);
+}
+
+.profileBtn {
+  /* background-color: #1a73e8; */
+  width: 70%;
+  background-color: #343a40;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

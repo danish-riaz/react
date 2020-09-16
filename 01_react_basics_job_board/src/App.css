@@ -1,0 +1,42 @@
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.App {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.TopBar {
+  margin: 40px 0;
+  height: 60px;
+}
+
+.TopBar h1 {
+  line-height: 60px;
+  display: inline !important;
+}
+
+body {
+  background-color: ##f2f2f2;
+}
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 411px) {
+  h1 {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 412px) {
+  h1 {
+    display: block !important;
+  }
+}
