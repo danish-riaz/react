@@ -1,0 +1,42 @@
+.menuItem {
+  width: 30%;
+  height: 250px;
+  box-sizing: border-box;
+
+  overflow: hidden;
+}
+.backgroundImage {
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+.backgroundImage:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+}
+
+.large {
+  width: 47%;
+  height: 350px;
+}
+
+.innerContainer {
+  background-color: white;
+  opacity: 0.7;
+  width: 27%;
+  height: 60px;
+  border: 1px solid;
+  text-align: center;
+  position: relative; /*Can also be `fixed`*/
+  left: 35%;
+  top: 37%;
+}
+
+.innerContainer:hover {
+  opacity: 0.9;
+}
+.innerContainer div {
+  margin-top: 6px;
+}
