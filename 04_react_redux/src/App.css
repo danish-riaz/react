@@ -1,0 +1,14 @@
+.App {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  width: 25%;
+  height: 35px;
+  background-color: #272822;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: large;
+}
