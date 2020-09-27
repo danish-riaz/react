@@ -2,4 +2,4 @@
 
 # Props Drilling Problem 
 
-![GitHub Logo](/tree.png)
+![GitHub Logo](./tree.png)
